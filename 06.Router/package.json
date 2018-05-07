@@ -4,7 +4,8 @@
 	"author": "keepfool <crmug@outlook.com>",
 	"private": true,
 	"scripts": {
-		"demo01-dev": "webpack-dev-server --inline --hot --config demo01/webpack.config.js --content-base demo01 --history-api-fallback",
+		"my01-dev": "webpack-dev-server --inline --hot --port 3030 --config my01/webpack.config.js --content-base my01 --history-api-fallback",
+		"demo01-dev": "webpack-dev-server --inline --hot --port 3030 --config demo01/webpack.config.js --content-base demo01 --history-api-fallback",
 		"demo01-build": "cross-env NODE_ENV=production webpack --config demo01/webpack.config.js --progress --hide-modules",
 		"demo02-dev": "webpack-dev-server --inline --hot --config demo02/webpack.config.js --content-base demo02 --history-api-fallback",
 		"demo02-build": "cross-env NODE_ENV=production webpack --config demo02/webpack.config.js --progress --hide-modules",
